@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Portal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Weather<span>Portal</span></h1>
+      <p class="tagline">Real-time weather, anywhere.</p>
+    </header>
+    <!-- Search -->
+    <div class="search-wrap">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input
+          type="text"
+          id="cityInput"
+          placeholder="Search city or location..."
+          autocomplete="off"
+        />
+        <button id="searchBtn">Search</button>
+      </div>
+      <button class="btn-locate" id="locateBtn">
+        📍 Use my location
+      </button>
+    </div>
+    <!-- Error -->
+    <div class="error-msg hidden" id="errorMsg"></div>
+    <!-- Skeleton loader -->
+    <div class="skeleton-wrap hidden" id="skeleton">
+      <div class="skeleton-hero"></div>
+      <div class="skeleton-row">
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+      </div>
+    </div>
+    <!-- Weather card -->
+    <div class="weather-wrap hidden" id="weatherWrap">
+      <!-- Main card -->
+      <div class="main-card" id="mainCard">
+        <div class="main-top">
+          <div>
+            <div class="city-name" id="cityName">—</div>
+            <div class="country" id="country">—</div>
+            <div class="weather-desc" id="weatherDesc">—</div>
+          </div>
+          <div class="weather-emoji" id="weatherEmoji">🌤️</div>
+        </div>
+        <div class="temp-display" id="tempDisplay">—°</div>
+        <div class="feels-like" id="feelsLike">Feels like —°</div>
+        <div class="main-meta">
+          <span id="localTime">—</span>
+          <span>·</span>
+          <span id="weatherDate">—</span>
+        </div>
+      </div>
+      <!-- Stats grid -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">💧</div>
+          <div class="stat-value" id="humidity">—</div>
+          <div class="stat-label">Humidity</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">💨</div>
+          <div class="stat-value" id="wind">—</div>
+          <div class="stat-label">Wind</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">👁️</div>
+          <div class="stat-value" id="visibility">—</div>
+          <div class="stat-label">Visibility</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🌡️</div>
+          <div class="stat-value" id="pressure">—</div>
+          <div class="stat-label">Pressure</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🌅</div>
+          <div class="stat-value" id="sunrise">—</div>
+          <div class="stat-label">Sunrise</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🌇</div>
+          <div class="stat-value" id="sunset">—</div>
+          <div class="stat-label">Sunset</div>
+        </div>
+      </div>
+      <!-- Unit toggle -->
+      <div class="unit-toggle">
+        <button class="unit-btn active" id="celsiusBtn">°C</button>
+        <button class="unit-btn" id="fahrenheitBtn">°F</button>
+      </div>
+    </div>
+    <!-- Default hint -->
+    <div class="hint" id="hint">
+      <div class="hint-icon">🌍</div>
+      <p>Search for a city or use your location<br/>to see live weather data.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
