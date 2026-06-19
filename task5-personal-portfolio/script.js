@@ -4,7 +4,7 @@
    kept deliberately minimal per the design's "quiet motion" rule.
    ────────────────────────────────────────────────────────── */
 
-const NAME = "Aanya Rao";
+const NAME = "Vishnu Teja";
 const typedEl = document.getElementById('typedName');
 
 function typeName(text, el, speed = 90) {
