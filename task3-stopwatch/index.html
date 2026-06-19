@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="app">
+
+    <header>
+      <h1>Stop<span>watch</span></h1>
+      <p class="tagline">Measure every moment.</p>
+    </header>
+
+    <!-- Ring display -->
+    <div class="ring-wrap">
+      <svg class="ring-svg" viewBox="0 0 220 220">
+        <circle class="ring-track" cx="110" cy="110" r="96"/>
+        <circle class="ring-fill" id="ringFill" cx="110" cy="110" r="96"/>
+      </svg>
+      <div class="time-display">
+        <div class="time-main" id="timeMain">00:00</div>
+        <div class="time-ms" id="timeMs">.00</div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button class="btn-secondary" id="lapBtn" disabled>Lap</button>
+      <button class="btn-primary" id="startBtn">Start</button>
+      <button class="btn-secondary" id="resetBtn" disabled>Reset</button>
+    </div>
+
+    <!-- Lap list -->
+    <div class="laps-wrap" id="lapsWrap">
+      <div class="laps-header" id="lapsHeader" style="display:none">
+        <span>Lap</span>
+        <span>Lap Time</span>
+        <span>Total</span>
+      </div>
+      <ul class="laps-list" id="lapsList"></ul>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
