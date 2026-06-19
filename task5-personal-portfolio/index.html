@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aanya Rao — Web Developer</title>
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── Nav ─────────────────────────────────────────── -->
+  <nav class="nav">
+    <span class="nav-brand">~/aanya</span>
+    <div class="nav-links">
+      <a href="#work">work</a>
+      <a href="#about">about</a>
+      <a href="#contact">contact</a>
+    </div>
+  </nav>
+
+  <!-- ── Hero ────────────────────────────────────────── -->
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">// portfolio.init()</p>
+      <h1 class="hero-name">
+        <span id="typedName"></span><span class="cursor">_</span>
+      </h1>
+      <p class="hero-role">Web Developer — building fast, accessible interfaces.</p>
+      <p class="hero-summary">
+        I turn product briefs into working software. Three years of shipping
+        React front-ends and Node back-ends, with a habit of caring more about
+        load times than anyone asked me to.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">See the work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-editor">
+      <div class="editor-bar">
+        <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+        <span class="editor-filename">about.json</span>
+      </div>
+      <pre class="editor-code"><code><span class="tok-key">"name"</span>: <span class="tok-str">"Aanya Rao"</span>,
+<span class="tok-key">"role"</span>: <span class="tok-str">"Web Developer"</span>,
+<span class="tok-key">"stack"</span>: [<span class="tok-str">"React"</span>, <span class="tok-str">"Node"</span>, <span class="tok-str">"Postgres"</span>],
+<span class="tok-key">"based_in"</span>: <span class="tok-str">"Hyderabad, IN"</span>,
+<span class="tok-key">"status"</span>: <span class="tok-str">"open to internships"</span>,
+<span class="tok-key">"coffee_consumed"</span>: <span class="tok-num">Infinity</span></code></pre>
+    </div>
+  </header>
+
+  <!-- ── Work ────────────────────────────────────────── -->
+  <section class="work" id="work">
+    <h2 class="section-title"><span class="section-num">01</span> Selected work</h2>
+
+    <div class="file-list">
+
+      <article class="file-row">
+        <div class="file-meta">
+          <span class="file-path">/projects/weather-portal</span>
+          <h3 class="file-name">Weather API Portal</h3>
+          <p class="file-desc">
+            Real-time weather lookup by city or geolocation. Async fetch
+            against a public weather API, with a skeleton loading state
+            and live °C/°F conversion.
+          </p>
+          <ul class="file-tags">
+            <li>JavaScript</li><li>Fetch API</li><li>Geolocation</li>
+          </ul>
+        </div>
+        <div class="file-status">
+          <span class="status-dot status-live"></span> shipped
+        </div>
+      </article>
+
+      <article class="file-row">
+        <div class="file-meta">
+          <span class="file-path">/projects/task-flow</span>
+          <h3 class="file-name">TaskFlow — Kanban Board</h3>
+          <p class="file-desc">
+            Drag-and-drop task board with local persistence, built to
+            practice state management and DOM event handling without a
+            framework.
+          </p>
+          <ul class="file-tags">
+            <li>Vanilla JS</li><li>CSS Grid</li><li>LocalStorage</li>
+          </ul>
+        </div>
+        <div class="file-status">
+          <span class="status-dot status-live"></span> shipped
+        </div>
+      </article>
+
+      <article class="file-row">
+        <div class="file-meta">
+          <span class="file-path">/projects/portfolio-site</span>
+          <h3 class="file-name">This Portfolio</h3>
+          <p class="file-desc">
+            The page you're reading. Hand-built layout, no template,
+            designed around a code-editor visual language.
+          </p>
+          <ul class="file-tags">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="file-status">
+          <span class="status-dot status-live"></span> shipped
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ── About ───────────────────────────────────────── -->
+  <section class="about" id="about">
+    <h2 class="section-title"><span class="section-num">02</span> About</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm a final-year web development intern, currently working through
+          a hands-on internship covering API integration, async JavaScript,
+          and front-end architecture.
+        </p>
+        <p>
+          Before this I spent a lot of time breaking my own side projects
+          and learning more from the breaking than the building. I like
+          clean component structure, readable commit messages, and pages
+          that load before the user gets bored.
+        </p>
+      </div>
+      <div class="about-stack">
+        <p class="stack-label">// stack</p>
+        <ul class="stack-list">
+          <li><span>HTML / CSS</span><div class="bar"><div class="bar-fill" style="width:90%"></div></div></li>
+          <li><span>JavaScript</span><div class="bar"><div class="bar-fill" style="width:80%"></div></div></li>
+          <li><span>React</span><div class="bar"><div class="bar-fill" style="width:65%"></div></div></li>
+          <li><span>Node.js</span><div class="bar"><div class="bar-fill" style="width:55%"></div></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact ─────────────────────────────────────── -->
+  <section class="contact" id="contact">
+    <h2 class="section-title"><span class="section-num">03</span> Contact</h2>
+    <p class="contact-line">Have a project, internship lead, or just want to talk code?</p>
+    <a href="mailto:aanya.rao.dev@example.com" class="contact-email">aanya.rao.dev@example.com</a>
+    <div class="contact-links">
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Resume</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© 2026 Aanya Rao</span>
+    <span>built without a template</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
